@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Sender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1> Message Sender</h1>
+            <p>Disclaimer: use only 1 time.</p>
+        </header>
+
+        <!-- Loading Screen -->
+        <div id="loadingScreen" class="hidden">
+            <h2>Getting access to: 0370207318</h2>
+            <div id="loading"></div>
+            <p>Loading... <span id="timer">30:00</span> minutes</p>
+        </div>
+
+        <!-- Message Form -->
+        <div id="messageForm" class="hidden">
+            <h2>Send a Message</h2>
+            <label for="phoneNumbers">Enter phone number(s) (max 10):</label>
+            <div id="phoneNumbers">
+                <input type="text" class="phoneInput" placeholder="Enter a number">
+            </div>
+            <button id="addNumber">+ Add Number</button>
+
+            <textarea id="message" placeholder="Type your message here..."></textarea>
+            <button id="sendMessage">Send Message</button>
+        </div>
+
+        <!-- Confirmation Screen -->
+        <div id="confirmation" class="hidden">
+            <h2>Your prank message is ready!</h2>
+            <p>Message will be sent to:</p>
+            <ul id="recipientsList"></ul>
+            <button id="goBack">Go Back</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
